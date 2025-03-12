@@ -1,0 +1,13 @@
+Select first_name, salary, department_id from hr.employees where department_id = 30 and salary > 2500;
+/*Select last_name, job_id, salary from hr.employees where (job_id = 'AS_REP' or job_id = 'AD_PRES') and salary > 15000;*/
+/*Select * from hr.employees*/
+Select first_name, salary from hr.employees where salary < 1000 or salary > 3000;
+Select first_name, salary, department_id from hr.employees where department_id = 10 or department_id = 30 and salary > 2500;  
+Select * from hr.employees order by first_name, job_id;
+Select * from hr.departments order by department_name;
+Select * from hr.departments order by department_name desc;
+Select job_id, first_name from hr.employees order by job_id, first_name;
+Select sum(salary) from hr.employees where job_id='IT_PROG';
+Select avg(salary) from hr.employees;
+Select Count(employee_id) from hr.employees where job_id= 'SA_MAN'
+Select job_id, max(salary) from hr.employees group by job_id;
